@@ -16,12 +16,13 @@
                 {% endfor %}
             </ul>
             {% else %}
-                <strong>No pages currently in this category.</strong>
+                <strong>No pages currently in category.</strong>
             {% endif %}
         {% else %}
-            The specified category does not exist
-        {% end if %}
+            The specified category does not exist.
+        {% endif %}
+            <a href="{% url 'index' %}">Home</a>
         </div>
     </body>
-    
+
 </html>
